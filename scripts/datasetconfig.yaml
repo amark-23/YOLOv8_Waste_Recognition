@@ -1,0 +1,6 @@
+path: C:/Users/amark/yolo_dataset
+train: images/train
+val: images/val
+test: images/test
+nc: 5
+names: [plastic, glass, organic, metal, paper]
