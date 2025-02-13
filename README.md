@@ -20,10 +20,11 @@ yolo_dataset/
 │   ├── val/
 │   └── test/
 ├── scripts/
-│   ├── train_custom_yolo.py
-│   ├── evaluate_model.py
-│   ├── webcam_detection.py
-│   └── custom_data.yaml
+│   ├── split.py
+│   ├── train.py
+│   ├── evaluation.py
+│   ├── camera_detection.py
+│   └── dataconfig.yaml
 ├── runs/ (YOLO training results)
 ├── yolo_env/ (Virtual environment)
 └── README.md
@@ -72,10 +73,10 @@ Save annotations in **YOLO format (.txt)**.
 ### 3️⃣ Split Data (Train/Val/Test)
 Run the following script to split data:
 ```sh
-python split_dataset.py
+python split.py
 ```
 
-### 4️⃣ Create `custom_data.yaml`
+### 4️⃣ Create `dataconfig.yaml`
 ```yaml
 path: /path/to/yolo_dataset
 train: images/train
@@ -95,7 +96,7 @@ yolo download yolov8n.pt
 
 ### 2️⃣ Run Training Script
 ```sh
-python train_custom_yolo.py
+python train.py
 ```
 - **Custom training parameters:**
   - `epochs=100`
@@ -115,7 +116,7 @@ tensorboard --logdir runs/detect/custom_model
 ## 📈 Model Evaluation
 Run the evaluation script:
 ```sh
-python evaluate_model.py
+python evaluation.py
 ```
 This prints:
 - **mAP50**: Mean Average Precision at IoU 0.5
@@ -127,7 +128,7 @@ This prints:
 ## 🎥 Real-Time Webcam Detection
 Run the real-time object detection script:
 ```sh
-python webcam_detection.py
+python camera_detection.py
 ```
 Press **'q'** to exit.
 
