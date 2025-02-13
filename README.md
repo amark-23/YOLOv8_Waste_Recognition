@@ -3,7 +3,8 @@
 ## 📌 Project Overview
 This project implements **YOLOv8** for **waste recognition** using object detection. The model is trained to classify and detect different types of waste items such as **plastic, glass, organic, metal, and paper**. The system includes dataset preparation, training, evaluation, and real-time webcam inference.
 
-You can access an example dataset [in this link](https://drive.google.com/file/d/1SF7nb_AjUP72SkaFRd2ZiT_rU4ScqZk2/view?usp=sharing)
+You can access an example dataset [in this link](https://drive.google.com/file/d/1SF7nb_AjUP72SkaFRd2ZiT_rU4ScqZk2/view?usp=sharing).
+The runs/ folder contains training results of that dataset
 
 ---
 
